@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+  <body>
+    <h1 id="title">¿Como fue tu experiencia con C&G Home?</h1>
+    <p id="description">Con el afan de seguir mejorando, queremos conocer tu opinion.</p>
+    <form method="post" id="survey-form">
+       <div class="container"> 
+        <fieldset>
+            <label for="name" id="name-label">Nombre: <input id="name" name="name" type="text" required class="input1" placeholder="tu nombre"></label>
+            <label for="apellido">Apellido: <input id="apellido" name="apellido" type="text" required class="input1" placeholder="tu apellido"/></label>
+            <label for="email" id="email-label">Email: <input id="email" name="email" type="email" required class="input1" placeholder="tu email"/></label>
+            <label for="number" id="number-label">Edad: <input id="number" name="number" type="number" min="18" max="100" required class="input1" placeholder="18"/></label>
+        </fieldset>
+        <fieldset>  
+            <p>¿Recomendarias nuestros productos?</p> 
+            <label for="definitivamente"><input id="definitivamente" type="radio" name="recomendacion" class="inline" checked value="1"/> Definitivamente</label> 
+            <label for="quizas"><input id="quizas" type="radio" name="recomendacion" class="inline" value="2"/> Quizas</label>
+            <label for="no"><input id="no" type="radio" name="recomendacion" class="inline" readonly value="3"/> No estoy seguro/a</label>
+        </fieldset>
+        <fieldset>  
+            <p>¿Como nos conociste?</p>
+            <select id="dropdown" name="dropdown">
+                <option value="">Elegi una opcion</option>
+                <option value="1">Instagram</option>   
+                <option value="2">Facebook</option>
+                <option value="3">Mercado Libre</option>
+                <option value="4">Recomendacion</option>   
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>En que deberiamos mejorar:</p>
+            <label for="precio"><input id="precio" type="checkbox" name="precio" class="inline" value="precio"/> Precio</label>
+            <label for="ofertas"><input id="ofertas" type="checkbox" name="ofertas" class="inline" value="ofertas"/> Ofertas</label>
+            <label for="atencion"><input id="atencion" type="checkbox" name="atencion" class="inline" value="atencion"/> Atencion</label>
+            <label for="calidad"><input id="calidad" type="checkbox" name="calidad" class="inline" value="calidad"/> Calidad del producto</label>        
+        </fieldset>
+        <fieldset>
+            <label for="recomendacion">¿Que recomendacion nos darias para seguir creciendo?</p>
+             <textarea id="recomendacion" name="recomendacion" rows="3" cols="30" placeholder="escribe aqui tu recomendacion"></textarea>
+            </label>
+        </fieldset>
+     <input id="submit" type="submit" value="Enviar">  
+    </div>
+   </form>
+  </body>
+</html>
